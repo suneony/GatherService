@@ -1,4 +1,4 @@
-package com.suneony.gatherservice;
+package com.suneony.gatherservice.packagequeue;
 
 import java.io.BufferedWriter;
 import java.io.File;

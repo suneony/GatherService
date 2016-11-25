@@ -1,7 +1,7 @@
 /**
  * @author suneony
  * */
-package com.suneony.gatherservice;
+package com.suneony.gatherservice.packagequeue;
 
 
 public class PackageRecord{
