@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+sourceSets{  
+    main{  
+        java{  
+            srcDir 'src/main/java'  
+        }  
+        resources{  
+            srcDir 'src/main/resources' 
+        }  
+    }  
+}
+task taskJar(type:Jar,dependsOn:compileJava){
+     from 'build/classes'  
+    destinationDir = file('build/libs')  
+}
+
+jar{
+    manifest{
+        attributes 'Main-Class':"com.suneony.gatherservice.PackageRecord"
+    }
+}
