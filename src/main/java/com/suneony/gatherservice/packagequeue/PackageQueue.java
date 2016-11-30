@@ -129,4 +129,8 @@ public class PackageQueue{
 		PackageRecord packageRecordObj=new PackageRecord(firstPackageRecord);
 		return packageRecordObj;
 	}
+	public static void main(String[] args){
+		PackageRecord packageRecord=new PackageRecord("a","b,","c","d","e","f");
+		PackageQueue.push(packageRecord);
+	}
 }
